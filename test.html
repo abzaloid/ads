@@ -14,20 +14,45 @@ input {
 }
 .amazon {
   background-color: #232f3e;
+  padding: 0px;
 }
 .search-box {
-  padding-top: 20px;
-  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   min-height: 50px;
 }
+
+.logo {
+  padding-top: 20px;
+}
+
+.toggle-button {
+  padding-right: 0;
+}
+
+.menu-bottom {
+
+}
+
+#myNavbar {
+  padding: 0;
+}
+
 </style>
 <div class="container">
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid amazon">
-    <div class="col-sm-2 text-center">
+  <div class="container-fluid amazon text-center">
+    <div class="col-sm-2 ">
       <div class="row">
-        <div class="col-md-12">
-              <img height="85px" src="http://www.userlogos.org/files/logos/jumpordie/amazon_02.png"/>
+        <div class="col-xs-1 pull-right toggle-button">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+        </div>
+        <div class="col-xs-10 logo">
+            <img width="100px" src="amazon.png"/>
         </div>
       </div>
     </div>
@@ -36,7 +61,7 @@ input {
         <div class="col-md-12 search-box">
           <div class="input-group">
             <div class="input-group-btn">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All<span class="caret"></span></button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All <span class="caret"></span></button>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
@@ -48,13 +73,8 @@ input {
             <input type="text" class="form-control" aria-label="..." placeholder="Search"/>
           </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 menu-bottom">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span> 
-            </button>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
