@@ -7,9 +7,24 @@
 			<p>
 				<t class="lead">{{name}}</t> 
 					<small class="pull-right">
-						<em>Published: </em>Mar 4, 2014,<br/>
-						<em>Condition: </em><span class="text-capitalize">{{condition}}</span>, <br/>
-					 	<em>Views: </em>{{views}}
+						<table>
+							<tr>
+								<td><em>Published: </em></td>
+								<td class="text-right">Mar 4, 2014</td>
+							</tr>
+							<tr>
+								<td><em>Condition: </em></td>
+								<td class="text-right">{{condition}}</td>
+							</tr>
+							<tr>
+								<td><em>Views: </em></td>
+								<td class="text-right">{{views}}</td>
+							</tr>
+							<tr>
+								<td><em>Comments: </em></td>
+								<td class="text-right">{{comments}}</td>
+							</tr>
+						</table>
 					</small>
 					<br/>
 				<small>by <a href="#"><strong>{{owner}}</strong></a></small>
