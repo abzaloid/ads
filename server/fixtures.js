@@ -1,3 +1,16 @@
+if (Items.find().count() === 0) {
+    for (var i = 0; i < 20; i++) {
+        Items.insert({
+            name: 'Item #' + i,
+            img: 'https://slm-assets0.secondlife.com/assets/5059168/view_large/Closed%20Book.jpg?1328747023',
+            price: 45.65,
+            owner: 'abzaloid',
+            condition: 'new',
+            views: i,
+        });
+    }
+}
+
 if (Categories.find().count() === 0) {
     Categories.insert({
     	name: 'Books'

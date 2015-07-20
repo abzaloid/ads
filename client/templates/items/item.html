@@ -1,0 +1,15 @@
+<template name="Item">
+	<div class="row drop-shadow">
+		<div class="col-md-4 text-center center">
+			<img src="{{img}}" height="80px" />
+		</div>
+		<div class="col-md-8">
+			<p><t class="lead">{{name}}</t> <small class="pull-right">Mar 4, 2014</small></p>
+			<small>by <a href="#"><strong>{{owner}}</strong></a></small>
+			<p>Price: <strong>${{price}}</strong> </p>
+			<p>Condition: <strong> {{condition}} </strong></p>
+			<p>Views: <strong>{{views}}</strong></p>
+			
+		</div>
+	</div>
+</template>

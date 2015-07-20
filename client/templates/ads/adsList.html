@@ -1,15 +1,28 @@
 <template name="adsList">
+	<div class="drop-shadow">
+		<div class="row">
+			<div class="col-sm-8"><p>1-16 of 44 results for "your search keywords"</p></div>
+			<div class="col-sm-4 pull-right text-right">
+			  	Sort by
+			  	<select>
+			    	<option>Relevance</option>
+				    <option>Publication Date</option>
+				    <option>Price: Lowest to Highest</option>
+				    <option>Price: Highest to Lowest</option>
+				    <option>Featured</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<hr/>
 	<div class="row">
-		<div class="col-sm-8"><p>1-16 of 44 results for "your search keywords"</p></div>
-		<div class="col-sm-4 pull-right text-right">
-		  	Sort by
-		  	<select>
-		    	<option>Relevance</option>
-			    <option>Publication Date</option>
-			    <option>Price: Lowest to Highest</option>
-			    <option>Price: Highest to Lowest</option>
-			    <option>Featured</option>
-			</select>
+		<div class="col-md-3">
+			Hello
+		</div>
+		<div class="col-md-9">
+			{{#each items}}
+				{{> Item}}
+			{{/each}}
 		</div>
 	</div>
 </template>
