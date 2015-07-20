@@ -1,39 +1,15 @@
 <template name="layout">
-<div class="container">
-
-{{> header}}
-
-{{> yield}}
-
-<div class="hidden-md hidden-lg">
-  <ul class="list-group lead">
-    <a class="list-group-item" href="">All Departments <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Books <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Electronics <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Computers &amp; Laptops <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Cell Phones &amp; Accessories <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Clothing, Shoes &amp; Jewelry <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Sports &amp; Outdoors <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Home &amp; Kitchen <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Automotive <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Toys &amp; Games <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Office Products <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Tools <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Health &amp; Personal Care <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Video Games <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Industrial &amp; Scientific <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Grocery <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Beauty <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Baby <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Musical Intruments <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Appliances <span class="pull-right">&gt;</span></a>
-    <a class="list-group-item" href="">Everything else <span class="pull-right">&gt;</span></a>
-  </ul>
-</div>
-
-
-{{> footer}}
-
-</div>
-
+    <div class="container">
+        {{> header}}
+        {{> yield}}
+            <div class="hidden-md hidden-lg">
+              <ul class="list-group lead">
+                <a class="list-group-item" href="">All Departments <span class="pull-right">&gt;</span></a>
+                {{#each categories}}
+                    {{> categoryItemFooter}}
+                {{/each}}
+              </ul>
+            </div>
+        {{> footer}}
+    </div>
 </template>
