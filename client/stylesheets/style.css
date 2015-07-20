@@ -15,6 +15,8 @@ padding-top: 10px;
 -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.49);
 -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.49);
 box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.49);
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .center {
@@ -60,3 +62,23 @@ box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.49);
   border-top: 1px solid #e5e5e5;
 }
 
+.giveMeEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* number of lines to show = N */
+  line-height: 1.5;        /* fallback = X */
+  max-height: 4.5;       /* fallback = XN  */
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.old-price {
+  color: #777;
+  text-decoration: line-through;
+}
