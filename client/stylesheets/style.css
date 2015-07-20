@@ -2,9 +2,16 @@ input {
     max-width: 900px;
 }
 
+#main-container {
+  max-width: 1000px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .amazon {
   background-color: #232f3e;
-  padding: 0px;
+  padding: 0;
 }
 
 .search-box {
