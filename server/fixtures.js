@@ -7,6 +7,7 @@ if (Items.find().count() === 0) {
             owner: 'abzaloid',
             condition: 'new',
             views: i,
+            comments: 20-i,
         });
     }
 }
