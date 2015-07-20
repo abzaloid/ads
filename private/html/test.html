@@ -35,11 +35,21 @@ input {
 .logo-col {
   padding-right: 0;
 }
-
-.navbar-inverse .navbar-toggle {
+.navbar-toggle {
   border: none;
   border-radius: 0;
-  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-toggle:hover{
+  border-color: transparent !important;  
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
 </style>
@@ -48,14 +58,17 @@ input {
   <div class="container-fluid amazon text-center">
     <div class="col-sm-2 logo-col">
       <div class="row">
-        <div class="col-xs-1 pull-right toggle-button">
+        <div class="col-xs-1 pull-right hidden-md hidden-lg">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
             </button>
         </div>
-        <div class="col-xs-11 logo">
+        <div class="col-xs-12 logo hidden-xs hidden-sm">
+            <a href="#"><img width="100px" src="amazon.png"/></a>
+        </div>
+        <div class="col-xs-10 logo hidden-md hidden-lg">
             <a href="#"><img width="100px" src="amazon.png"/></a>
         </div>
       </div>
@@ -117,7 +130,56 @@ input {
     </div>
   </div>
 </nav>
+
+<div class="hidden-md hidden-lg">
+  <ul class="list-group lead">
+    <a class="list-group-item" href="">All Departments <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Books <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Electronics <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Computers &amp; Laptops <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Cell Phones &amp; Accessories <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Clothing, Shoes &amp; Jewelry <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Sports &amp; Outdoors <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Home &amp; Kitchen <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Automotive <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Toys &amp; Games <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Office Products <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Tools <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Health &amp; Personal Care <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Video Games <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Industrial &amp; Scientific <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Grocery <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Beauty <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Baby <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Musical Intruments <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Appliances <span class="pull-right">&gt;</span></a>
+    <a class="list-group-item" href="">Everything else <span class="pull-right">&gt;</span></a>
+  </ul>
 </div>
+
+<footer class="footer text-center">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 text-center">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <a href="">Contact</a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a href="">Source</a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a href="">Help</a>
+        </div>
+      </div>       
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+  <p>&copy; Abzal Serekov 2015</p>
+</footer>
+</div>
+
+
 
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
