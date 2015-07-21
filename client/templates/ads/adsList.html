@@ -18,7 +18,18 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
-				Hello
+				<label for="categories_checkbox">
+					Categories
+				</label>
+				 <form role="form">
+				    <label>
+				    	{{#each categories}}
+					    	<div class="checkbox">
+						    	<label><input type="checkbox" value=""> {{name}}</label>
+					    	</div>
+				    	{{/each}}
+				    </label>
+				 </form>
 			</div>
 			<div class="col-md-9">
 				{{#each items}}
