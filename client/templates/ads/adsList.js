@@ -6,4 +6,3 @@ Template.adsList.helpers({
   	return Categories.find();
   }
 });
-
