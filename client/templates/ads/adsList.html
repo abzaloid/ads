@@ -1,5 +1,5 @@
 <template name="adsList">
-	<div class="drop-shadow">
+	<div class="drop-shadow navbar-fixed-top search-info">
 		<div class="row">
 			<div class="col-sm-4 pull-right text-right">
 			  	Sort by
@@ -17,10 +17,12 @@
 	<hr/>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3">
-				<ul>
+		<div id="myNav"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<div class="col-md-3 hidden-sm hidden-xs sidebar-categories">
+				 <ul class="nav nav-tabs nav-stacked affix" data-spy="affix" data-offset-top="190">
+					 <p class="lead">Categories</p>
 			    	{{#each categories}}
-				    	<li class="checkbox">
+				    	<li>
 					    	<input type="checkbox" value=""> {{name}}
 				    	</li>
 			    	{{/each}}
@@ -32,5 +34,6 @@
 				{{/each}}
 			</div>
 		</div>
+	</div>
 	</div>
 </template>

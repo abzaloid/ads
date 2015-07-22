@@ -2,14 +2,14 @@
     <div id="main-container">
         {{> header}}
         {{> yield}}
-            <div class="hidden-md hidden-lg">
-              <ul class="list-group lead">
-                <a class="list-group-item" href="">All Departments <span class="pull-right">&gt;</span></a>
-                {{#each categories}}
-                    {{> categoryItemFooter}}
-                {{/each}}
-              </ul>
-            </div>
+        <div class="hidden-md hidden-lg">
+          <ul class="list-group lead">
+            <a class="list-group-item" href="">All Departments <span class="pull-right">&gt;</span></a>
+            {{#each categories}}
+                {{> categoryItemFooter}}
+            {{/each}}
+          </ul>
+        </div>
         {{> footer}}
     </div>
 </template>

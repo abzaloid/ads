@@ -2,9 +2,8 @@ input {
     max-width: 900px;
 }
 
-
 #main-container {
-  max-width: 1000px;
+  max-width: 1000px !important;
   left: 0;
   right: 0;
   margin: auto;
@@ -25,6 +24,7 @@ padding-right: 15px;
 .amazon {
   background-color: #232f3e;
   padding: 0;
+  max-width: 1000px !important;
 }
 
 .search-box {
@@ -81,5 +81,34 @@ padding-right: 15px;
 .old-price {
   color: #777;
   text-decoration: line-through;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border: none;
+}
+
+body {
+  padding-top: 130px;
+}
+
+.navbar-fixed-top {
+  border-width: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.search-info {
+  top: 112px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1000px !important;
+  background-color: white;
+}
+
+.sidebar-categories {
+  overflow-y: auto;
 }
 
