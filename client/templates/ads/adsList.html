@@ -1,7 +1,7 @@
 <template name="adsList">
 	<div class="drop-shadow search-info">
 		<div class="row">
-			<div class="col-sm-4 pull-right text-right">
+			<div class="col-md-4 pull-right text-right hidden-xs hidden-sm">
 			  	Sort by
 			  	<select>
 			    	<option>Relevance</option>
@@ -11,7 +11,11 @@
 				    <option>Featured</option>
 				</select>
 			</div>
-			<div class="col-sm-8"><p>1-16 of 44 results for "your search keywords"</p></div>
+			<div class="col-xs-4 pull-right text-right hidden-md hidden-lg">
+				<a href="#" class="font-awesome"><i class="fa fa-filter"></i></a>
+				<a href="#" class="font-awesome"><i class="fa fa-sort-amount-desc"></i></a>
+			</div>
+			<div class="col-xs-8"><p>1-16 of 44 results for "your search keywords"</p></div>
 		</div>
 	</div>
 	<hr/>
@@ -19,12 +23,13 @@
 		<div class="row">
 			<div id="myNav"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 				<div class="col-md-3 hidden-sm hidden-xs ">
-					 <ul class="nav nav-tabs nav-stacked affix sidebar-categories" data-spy="affix" data-offset-top="190">
+					 <ul class="nav nav-tabs nav-stacked affix sidebar-categories" data-spy="affix" data-offset-top="130">
 				    	{{#each categories}}
 						    	<li>
 							    	<p> <input type="checkbox" value=""> {{name}} </p>
 						    	</li>
 				    	{{/each}}
+				    	<a href="#"><small>reset</small></a>
 					</ul>
 		 		</div>
 				<div class="col-md-9">

@@ -35,9 +35,6 @@ if (Categories.find().count() === 0) {
     	name: 'Home & Kitchen'
     });
     Categories.insert({
-    	name: 'Automotive'
-    });
-    Categories.insert({
     	name: 'Toys & Games'
     });
     Categories.insert({
@@ -62,15 +59,9 @@ if (Categories.find().count() === 0) {
     	name: 'Beauty'
     });
     Categories.insert({
-    	name: 'Baby'
-    });
-    Categories.insert({
     	name: 'Musical Intruments'
     });
     Categories.insert({
-    	name: 'Appliances'
-    });
-    Categories.insert({
-    	name: 'Everything else'
+    	name: 'Others'
     });
 }

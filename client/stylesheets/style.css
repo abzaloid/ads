@@ -59,10 +59,7 @@ padding-right: 15px;
 .footer {
   padding-top: 30px;
   color: #777;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
+ }
 
 .giveMeEllipsis {
   overflow: hidden;
@@ -113,10 +110,21 @@ body {
 }
 
 .sidebar-categories {
-  overflow-y: auto;
   border-right: thin solid #eee;
-  height: 70vh;
+  height: 480px;
   border-bottom: 0;
   padding-right: 25px;
+  padding-bottom: 25px;
 }
+
+.font-awesome:hover {
+  color: #3F51B5;
+}
+
+.font-awesome {
+  color: #212121;
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+
 
