@@ -106,6 +106,8 @@ body {
   margin: auto;
   max-width: 1000px !important;
   background-color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 .sidebar-categories {
