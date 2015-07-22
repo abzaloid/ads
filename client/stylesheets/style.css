@@ -57,9 +57,8 @@ padding-right: 15px;
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+  padding-top: 40px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .giveMeEllipsis {
@@ -112,5 +111,9 @@ body {
 
 .sidebar-categories {
   overflow-y: auto;
+  border-right: thin solid #eee;
+  height: 470px;
+  border-bottom: 0;
+  padding-right: 25px;
 }
 

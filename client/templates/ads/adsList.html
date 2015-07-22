@@ -17,23 +17,23 @@
 	<hr/>
 	<div class="container-fluid">
 		<div class="row">
-		<div id="myNav"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-			<div class="col-md-3 hidden-sm hidden-xs sidebar-categories">
-				 <ul class="nav nav-tabs nav-stacked affix" data-spy="affix" data-offset-top="190">
-					 <p class="lead">Categories</p>
-			    	{{#each categories}}
-				    	<li>
-					    	<input type="checkbox" value=""> {{name}}
-				    	</li>
-			    	{{/each}}
-				</ul>
-	 		</div>
-			<div class="col-md-9">
-				{{#each items}}
-					{{> Item}}
-				{{/each}}
+			<div id="myNav"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+				<div class="col-md-3 hidden-sm hidden-xs ">
+					 <ul class="nav nav-tabs nav-stacked affix sidebar-categories" data-spy="affix" data-offset-top="190">
+						 <p class="lead">Categories</p>
+				    	{{#each categories}}
+					    	<li>
+						    	<input type="checkbox" value=""> {{name}}
+					    	</li>
+				    	{{/each}}
+					</ul>
+		 		</div>
+				<div class="col-md-9">
+					{{#each items}}
+						{{> Item}}
+					{{/each}}
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 </template>
