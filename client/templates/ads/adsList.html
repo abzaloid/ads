@@ -24,10 +24,13 @@
 			<div id="myNav"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 				<div class="col-md-3 hidden-sm hidden-xs ">
 					 <ul class="nav nav-tabs nav-stacked affix sidebar-categories" data-spy="affix" data-offset-top="130">
+					 		<li>
+					 			<p> <input type="checkbox" value=""> All </p>
+					 		</li>
 				    	{{#each categories}}
-						    	<li>
-							    	<p> <input type="checkbox" value=""> {{name}} </p>
-						    	</li>
+					    	<li>
+						    	<p> <input type="checkbox" value=""> {{name}} </p>
+					    	</li>
 				    	{{/each}}
 				    	<a href="#"><small>reset</small></a>
 					</ul>
