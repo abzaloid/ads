@@ -115,6 +115,7 @@ body {
   border-bottom: 0;
   padding-right: 25px;
   padding-bottom: 25px;
+  overflow-y: auto;
 }
 
 .font-awesome:hover {
