@@ -1,21 +1,18 @@
 <template name="adsList">
 	<div class="drop-shadow search-info">
 		<div class="row">
-			<div class="col-md-4 pull-right text-right hidden-xs hidden-sm">
+			<div class="col-xs-8 pull-right text-right">
 			  	Sort by
 			  	<select>
 			    	<option>Relevance</option>
-				    <option>Publication Date</option>
-				    <option>Price: Lowest to Highest</option>
-				    <option>Price: Highest to Lowest</option>
+				    <option>Date</option>
+				    <option>Price &uarr;</option>
+				    <option>Price &darr;</option>
 				    <option>Featured</option>
+				    <option class="hidden-md hidden-lg">Category</option>
 				</select>
 			</div>
-			<div class="col-xs-4 pull-right text-right hidden-md hidden-lg">
-				<a href="#" class="font-awesome"><i class="fa fa-filter"></i></a>
-				<a href="#" class="font-awesome"><i class="fa fa-sort-amount-desc"></i></a>
-			</div>
-			<div class="col-xs-8"><p>1-16 of 44 results for "your search keywords"</p></div>
+ 			<div class="col-xs-4"><p>44 results</p></div>
 		</div>
 	</div>
 	<hr/>
