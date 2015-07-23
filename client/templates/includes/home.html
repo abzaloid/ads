@@ -1,0 +1,10 @@
+<template name="home">
+    <div class="hidden-md hidden-lg">
+      <ul class="list-group lead">
+        <a class="list-group-item" href="">All<span class="pull-right">&gt;</span></a>
+        {{#each categories}}
+            {{> categoryItemFooter}}
+        {{/each}}
+      </ul>
+    </div>
+</template>
