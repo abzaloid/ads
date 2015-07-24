@@ -1,0 +1,46 @@
+<template name="showItem">
+	<div class="row">
+		<button type="button" class="btn btn-primary pull-right">Reply</button>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 text-center center no-padding">
+			<img src="{{item.img}}" height="200px" class="img-responsive center" />
+		</div>
+		<div class="col-xs-8 center ">
+			<h3>{{item.name}}</h3>
+			by <a href="#">{{item.owner}}</a>
+			<br/>
+			<br/>
+			<p><span class="price">{{item.price}} KZT</span>&nbsp;<span class="old-price text-right">66.7 KZT</span></p>
+			<p><strong>Description: </strong>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+	</div>
+	<hr/>
+	<div class="row comments">
+	<h4>Comments (2) </h4>
+	<div class="row comment">
+		<div class="col-xs-2 text-center center">
+			<a href="#"><i class="fa fa-user fa-5x text-center hidden-xs"></i></a>
+			<a href="#"><i class="fa fa-user fa-3x text-center hidden-sm hidden-md hidden-lg"></i></a>
+			<p class="comment-author hidden-xs"><a href="#">abzaloid</a></p>
+		</div>
+		<div class="col-xs-10 center">
+			<p class="comment-author hidden-sm hidden-md hidden-lg"><a href="#">abzaloid</a></p>
+			<p class="comment-history">16 hours ago</p>
+			<p class="comment-body">
+			Nice! Very cheap yet very qualitative! Thank you!
+			</p>
+			<p class="comment-stats">
+				<a href="#"><span class="comment-reply">reply&rarr;</span></a>
+				<span class="comment-like-dislike pull-right">
+					<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+					<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
+				</span>
+				<span class="comment-likes pull-right">+12
+				&nbsp;</span> 
+			</p>
+		</div>
+	</div>
+	</div>
+</template>

@@ -132,3 +132,47 @@ body {
   padding: 0;
 }
 
+
+/* COMMENTS STYLES */
+.comments {
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+.comment {
+  position: relative;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .comments {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .comment {
+    position: relative;
+    padding-left: 5px;
+  }
+}
+
+
+.comment-author {
+
+}
+
+.comment-history {
+  font-size: 0.8em;
+}
+
+.comment-reply {
+  font-size: 0.8em;
+}
+
+.comment-like-dislike {
+  font-size: 1.2em;
+}
+
+.comment-likes {
+  font-size: 1.2em;
+}
