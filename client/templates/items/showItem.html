@@ -27,29 +27,42 @@
 	</div>
 	<hr/>
 	<div class="row comments">
-	<h4>Comments (1) </h4>
-	<div class="row comment">
-		<div class="col-xs-2 text-center center">
-			<a href="#"><i class="fa fa-user fa-5x text-center hidden-xs"></i></a>
-			<a href="#"><i class="fa fa-user fa-3x text-center hidden-sm hidden-md hidden-lg"></i></a>
-			<p class="comment-author hidden-xs"><a href="#">abzaloid</a></p>
+		<h4>Comments (1) </h4>
+		<div class="row comment">
+		<a href="#"><p class="comment-control pull-right" id="add-comment">New Comment</p></a>
+		<div class="col-xs-12" style="display:none;" id="new-comment">
+			<div class="form-group">
+				<textarea class="form-control" rows="5" placeholder="Your comment..."></textarea>
+				<div class="row comment-control pull-right ">
+					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="button" class="btn btn-danger">Cancel</button>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs-10 center">
-			<p class="comment-author hidden-sm hidden-md hidden-lg"><a href="#">abzaloid</a></p>
-			<p class="comment-history">16 hours ago</p>
-			<p class="comment-body">
-			Nice! Very cheap yet very qualitative! Thank you!
-			</p>
-			<p class="comment-stats">
-				<a href="#"><span class="comment-reply">reply&rarr;</span></a>
-				<span class="comment-like-dislike pull-right">
-					<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-					<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
-				</span>
-				<span class="comment-likes pull-right">+12
-				&nbsp;</span> 
-			</p>
 		</div>
-	</div>
+		<div class="row comment">
+			<div class="col-xs-2 text-center center">
+				<a href="#"><i class="fa fa-user fa-5x text-center hidden-xs"></i></a>
+				<a href="#"><i class="fa fa-user fa-3x text-center hidden-sm hidden-md hidden-lg"></i></a>
+				<a href="#"><p class="comment-author hidden-xs">abzaloid</p></a>
+			</div>
+			<div class="col-xs-10 center">
+				<p class="comment-author hidden-sm hidden-md hidden-lg"><a href="#">abzaloid</a></p>
+				<p class="comment-history">16 hours ago</p>
+				<p class="comment-body">
+				Nice! Very cheap yet very qualitative! Thank you!
+				</p>
+				<p class="comment-stats">
+					<a href="#"><span class="comment-reply">reply&rarr;</span></a>
+					<span class="comment-like-dislike pull-right">
+						<a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+						<a href="#"><i class="fa fa-thumbs-o-down"></i></a>
+					</span>
+					<span class="comment-likes pull-right">+12
+					&nbsp;</span> 
+				</p>
+			</div>
+		</div>
+
 	</div>
 </template>

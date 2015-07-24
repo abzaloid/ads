@@ -144,21 +144,40 @@ body {
   padding-left: 40px;
 }
 
+.comment-add {
+  position: relative;
+  padding-left: 60px;
+}
+
+
 @media only screen and (max-width: 600px) {
   .comments {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .comment {
     position: relative;
-    padding-left: 5px;
+    padding-left: 2px;
   }
+
+  .comment-add {
+  position: relative;
+  padding-left: 3px;
+}
+
+}
+
+.comment-control {
+  position: relative;
+  padding-top: 5px;
+  padding-right: 20px;
 }
 
 
 .comment-author {
-
+  color: red;
+  font-weight: bold;
 }
 
 .comment-history {
@@ -175,4 +194,10 @@ body {
 
 .comment-likes {
   font-size: 1.2em;
+}
+
+
+.comment-add-body {
+  width: 100px;
+  height: 100px;
 }
