@@ -111,7 +111,7 @@ body {
 
 .sidebar-categories {
   border-right: thin solid #eee;
-  height: 480px;
+  height: 80vh;
   border-bottom: 0;
   padding-right: 25px;
   padding-bottom: 25px;
