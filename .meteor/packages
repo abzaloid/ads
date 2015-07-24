@@ -11,3 +11,4 @@ underscore
 iron:router
 accounts-password
 sacha:spin
+momentjs:moment
