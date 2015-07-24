@@ -8,6 +8,8 @@ if (Items.find().count() === 0) {
             condition: 'new',
             views: i,
             comments: 20-i,
+            added_date: Date.now() - 123123,
+            updated_date: Date.now() - 1212
         });
     }
 }
