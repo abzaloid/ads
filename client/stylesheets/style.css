@@ -206,3 +206,11 @@ body {
   width: 100px;
   height: 100px;
 }
+
+.sell-button {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5em;
+}
