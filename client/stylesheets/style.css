@@ -214,3 +214,13 @@ body {
 .title {
   font-size: 2.5em;
 }
+
+.sell-categories {
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+.sell-success {
+  font-weight: bold;
+}
