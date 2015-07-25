@@ -25,6 +25,7 @@ padding-right: 15px;
   background-color: #232f3e;
   padding: 0;
   max-width: 1000px !important;
+  border-radius: 7px;
 }
 
 .search-box {
@@ -84,7 +85,6 @@ padding-right: 15px;
 
 .navbar {
   background-color: transparent !important;
-  border: none;
 }
 
 body {
@@ -107,6 +107,7 @@ body {
   background-color: white;
   position: fixed;
   z-index: 1;
+  border-radius: 7px;
 }
 
 .sidebar-categories {
@@ -135,13 +136,13 @@ body {
 
 /* COMMENTS STYLES */
 .comments {
-  padding-left: 40px;
-  padding-right: 60px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .comment {
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .comment-add {
