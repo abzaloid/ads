@@ -5,12 +5,12 @@
 		</div>
 		<div class="col-xs-9 center">
 			<p>
-				<t class="lead">{{name}}</t> 
+				<t class="lead"><a href="{{pathFor 'showItem'}}">{{name}}</a></t> 
 				<small class="pull-right hidden-xs">
 					<table>
 						<tr>
 							<td><em>Published: </em></td>
-							<td class="text-right">Mar 4, 2014</td>
+							<td class="text-right">{{formatDate added_date}}</td>
 						</tr>
 						<tr>
 							<td><em>Condition: </em></td>
@@ -27,7 +27,7 @@
 					</table>
 				</small>
 				<br/>
-				<small>by <a href="#"><strong>{{owner}}</strong></a></small>
+				<small>by <a href="{{pathFor 'user'}}"><strong>{{owner}}</strong></a></small>
 			</p>
 			<div class="row">
 				<div class="col-md-3">

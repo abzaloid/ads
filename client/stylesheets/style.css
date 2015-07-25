@@ -1,3 +1,7 @@
+a:hover{
+  text-decoration: none;
+}
+
 input {
     max-width: 900px;
 }
