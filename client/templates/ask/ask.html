@@ -2,7 +2,13 @@
 	{{> pageName title='ask'}}
 	<form>
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-4">
+				<label>Choose at least one category</label>
+				{{#each categories}}
+					{{> categoryItemSell}}
+				{{/each}}
+			</div>
+			<div class="col-sm-8">
 				<div class="form-group">
 					<label for="sell-item-title">Item Title</label>
 					<input type="text" class="form-control" id="sell-item-title" placeholder="Title">
@@ -22,14 +28,11 @@
 					<label for="sell-item-price">Preferred price</label>
 					<input type="number" class="form-control" id="sell-item-price" placeholder="Price in KZT (ex: 2000)">
 				</div>
-			</div>
-			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="sell-item-desc">Description</label>
-					<textarea id="sell-item-desc" class="form-control" rows="6" placeholder="Description"></textarea>
+					<textarea id="sell-item-desc" class="form-control" rows="8" placeholder="Description"></textarea>
 				</div>
 				<button type="submit" class="btn btn-primary sell-button">Ask</button>
-
 			</div>
 		</div>
 	</form>
