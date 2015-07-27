@@ -64,6 +64,9 @@ if (Categories.find().count() === 0) {
         name: 'Musical Intruments'
     });
     Categories.insert({
+        name: 'Service'
+    });
+    Categories.insert({
         name: 'Lost & Found'
     });
     Categories.insert({
