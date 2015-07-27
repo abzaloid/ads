@@ -61,7 +61,10 @@ if (Categories.find().count() === 0) {
     	name: 'Beauty'
     });
     Categories.insert({
-    	name: 'Musical Intruments'
+        name: 'Musical Intruments'
+    });
+    Categories.insert({
+        name: 'Lost & Found'
     });
     Categories.insert({
     	name: 'Others'
