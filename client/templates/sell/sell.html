@@ -11,11 +11,11 @@
 			<div class="col-sm-9">
 				<div class="form-group">
 					<label for="sell-item-title">Item Title</label>
-					<input type="text" class="form-control" id="sell-item-title" placeholder="Title">
+					<input name="name" type="text" class="form-control" id="sell-item-title" placeholder="Title">
 				</div>
 				<div class="form-group">
 					<label for="sell-item-condition">Item Condition</label>
-					<select id="sell-item-condition" class="form-control">
+					<select name="condition" id="sell-item-condition" class="form-control">
 				    	<option class="form-control">New</option>
 					    <option>Like New</option>
 					    <option>Very Good</option>
@@ -25,16 +25,16 @@
 				</div>
 				<div class="form-group">
 					<label for="sell-item-price">Preferred price</label>
-					<input type="number" class="form-control" id="sell-item-price" placeholder="Price in KZT (ex: 2000)">
+					<input name="price" type="number" class="form-control" id="sell-item-price" placeholder="Price in KZT (ex: 2000)">
 				</div>
 				<div class="form-group">
 					<label for="sell-item-img">Image</label>
-					<input type="file" id="sell-item-img">
+					<input name="photo_src" type="file" id="sell-item-img">
 					<p class="help-block">Please take into account that system will make it square sized.</p>
 				</div>
 				<div class="form-group">
 					<label for="sell-item-desc">Description</label>
-					<textarea id="sell-item-desc" class="form-control" rows="6" placeholder="Description"></textarea>
+					<textarea name="description" id="sell-item-desc" class="form-control" rows="6" placeholder="Description"></textarea>
 				</div>
 				<button type="submit" class="btn btn-primary sell-button">Sell</button>
 

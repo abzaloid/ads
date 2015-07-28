@@ -1,19 +1,20 @@
 <template name="showItem">
 	<div class="row">
 		<div class="col-xs-4 text-center center no-padding">
-			<img src="{{item.img}}" height="200px" class="img-responsive center" />
+			<img src="{{img}}" height="200px" class="img-responsive center" />
 		</div>
 		<div class="col-xs-8 center ">
-			<h3>{{item.name}}</h3>
-			by <a href="{{pathFor 'user'}}">{{item.owner}}</a>
+			<h3>{{name}}</h3>
+			by <a href="{{pathFor 'user'}}">{{owner}}</a>
 			<br/>
 			<br/>
-			<p><strong>Added: </strong>{{formatDateFromNow item.added_date}}</p>
-			<p><strong>Updated: </strong>{{formatDateFromNow item.updated_date}}</p>
-			<p><strong>Condition: </strong><span class="text-capitalize">{{item.condition}}</span></p>
-			<p><strong>Price: </strong><span class="price">{{item.price}} KZT</span>&nbsp;<span class="old-price text-right">66.7 KZT</span></p>
+			<p><strong>Added: </strong>{{formatDateFromNow added_date}}</p>
+			<p><strong>Updated: </strong>{{formatDateFromNow updated_date}}</p>
+			<p><strong>Condition: </strong><span class="text-capitalize">{{condition}}</span></p>
+			<p><strong>Price: </strong><span class="price">{{price}} KZT</span>&nbsp;{{#if old_price>=0 }}<span class="old-price text-right">{{old_price}} KZT</span>{{/if}}</p>
 			<p><strong>Description: </strong>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				{{description}}
+			</p>
 		</div>
 	</div>
 		<div class="row">
@@ -40,7 +41,7 @@
 			<div class="col-xs-2 text-center center">
 				<a href="{{pathFor 'user'}}"><i class="fa fa-user fa-5x text-center hidden-xs"></i></a>
 				<a href="{{pathFor 'user'}}"><i class="fa fa-user fa-3x text-center hidden-sm hidden-md hidden-lg"></i></a>
-				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-xs">{{item.owner}}</p></a>
+				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-xs">{{owner}}</p></a>
 			</div>
 			<div class="col-xs-10 center">
 				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-sm hidden-md hidden-lg">{{item.owner}}</p></a>
