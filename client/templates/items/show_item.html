@@ -15,6 +15,13 @@
 			<p><strong>Description: </strong>
 				{{description}}
 			</p>
+			{{#if categories}}
+				<p><strong>Categories: </strong>
+					{{#each categories}}
+						{{this}}, 
+					{{/each}}
+				</p>
+			{{/if}}
 		</div>
 	</div>
 		<div class="row">

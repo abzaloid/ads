@@ -1,5 +1,5 @@
 if (SellItems.find().count() === 0) {
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 5; i++) {
         var old_price = null;
         if (i % 2 == 0) {
             old_price = 34;
