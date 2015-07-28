@@ -3,3 +3,9 @@ Template.sell.helpers({
 		return Categories.find();
 	}
 });
+
+Template.sell.events({
+	'submit form': function () {
+		
+	}
+});
