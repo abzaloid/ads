@@ -224,3 +224,16 @@ body {
 .sell-success {
   font-weight: bold;
 }
+
+.control-search {
+  padding-top: 25px;
+}
+
+.control-search > strong > a {
+  color: #aaa;
+}
+
+.want {
+  font-style: italic;
+  color: white;
+}
