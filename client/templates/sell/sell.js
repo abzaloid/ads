@@ -15,13 +15,14 @@ Template.sell.events({
 			description: $(e.target).find('[name=description]').val(),
 		};
 
-		Meteor.call('sellItemInsert', sell, function (error, results) {
+		console.log("Name = " + sell_item.name);
+		console.log("Condition = " + sell_item.condition);
+
+		Meteor.call('sellItemInsert', sell_item, function (error, result) {
 			if (error)
 				return alert(error.reason);
 			Router.go('showItem', {_id: result._id});
 		});
-
-		Router.go('sellPage', sell_item);
 
 	}
 });

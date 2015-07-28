@@ -1,6 +1,6 @@
 Template.adsList.helpers({
-  items: function() {
-    return Items.find();
+  sell_items: function() {
+    return SellItems.find();
   },
   categories: function() {
   	return Categories.find();

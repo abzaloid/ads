@@ -1,10 +1,14 @@
 if (SellItems.find().count() === 0) {
     for (var i = 0; i < 20; i++) {
+        var old_price = null;
+        if (i % 2 == 0) {
+            old_price = 34;
+        }
         SellItems.insert({
             name: 'Item #' + i + ': toshiba chromebook 2',
             img: 'https://slm-assets0.secondlife.com/assets/5059168/view_large/Closed%20Book.jpg?1328747023',
             price: 45.65,
-            old_price: -(i % 2) * 34,
+            old_price: old_price,
             owner: 'abzaloid',
             condition: 'new',
             views: i,
