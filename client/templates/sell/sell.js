@@ -15,16 +15,16 @@ Template.sell.events({
 			description: $(e.target).find('[name=description]').val(),
 		};
 
-		//
+		//	******************************************
 		//	Testing if all fields are filled in a form
-		//
+		//	******************************************
 
 
 		$(e.target).find('[name=name]').parent().find("small").hide();
 		$(e.target).find('[name=price]').parent().find("small").hide();
 		$(e.target).find('[name=description]').parent().find("small").hide();
 		$(e.target).find('[name=name]').parent().find("small").hide();
-			$("ul.sell-categories").parent().find("small").hide();
+		$("ul.sell-categories").parent().find("small").hide();
 
 
 		var correct_form = true;
@@ -47,14 +47,18 @@ Template.sell.events({
 		}
 
 
+		// check if any of categories selected or not
+		// if selected, then add it to sell_item {:}
+		// if not, report error 
 		var $categories = $("ul.sell-categories").find("li > a.sell-success");
-		if ($categories & $categories.length > 0) {
+
+		if ($categories && $categories.length > 0) {
 			var categories_values = [];
 			var cat_len = $categories.length;
 			for (var i = 0; i < cat_len; i++) {
 				var category_name = $categories[i].text;
 				if (category_name.length > 1) {
-					categories_values.push(category_name.slice(0,-1));
+					categories_values.push(category_name.slice(0, -1));
 				} else {
 					alert('Something wrong!!!');
 					return false;
@@ -74,9 +78,9 @@ Template.sell.events({
 		}
 
 
-		//
+		//	***************************************************
 		//	call Meteor Server Side for Inserting new Sell Item
-		//
+		//  ***************************************************
 
 		Meteor.call('sellItemInsert', sell_item, function (error, result) {
 			if (error)
