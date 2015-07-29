@@ -13,3 +13,6 @@ sacha:spin
 momentjs:moment
 ian:accounts-ui-bootstrap-3
 yogiben:admin
+cfs:gridfs
+cfs:filesystem
+cfs:standard-packages
