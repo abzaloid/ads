@@ -4,6 +4,8 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<label>Choose at least one category</label>
+				<small id="hint-category" style="color:red;padding-left:10px;display:none;">*No one selected</small>
+
 				{{#each categories}}
 					{{> categoryItemSell}}
 				{{/each}}
@@ -12,6 +14,7 @@
 				<div class="form-group">
 					<label for="sell-item-title">Item Title</label>
 					<input name="name" type="text" class="form-control" id="sell-item-title" placeholder="Title">
+					<small id="hint-name" style="color:red;padding-left:10px;display:none;">*Please write item title</small>
 				</div>
 				<div class="form-group">
 					<label for="sell-item-condition">Item Condition</label>
@@ -26,6 +29,7 @@
 				<div class="form-group">
 					<label for="sell-item-price">Preferred price</label>
 					<input name="price" type="number" class="form-control" id="sell-item-price" placeholder="Price in KZT (ex: 2000)">
+					<small id="hint-price" style="color:red;padding-left:10px;display:none;">*Please write item price</small>
 				</div>
 				<div class="form-group">
 					<label for="sell-item-img">Image</label>
@@ -35,6 +39,7 @@
 				<div class="form-group">
 					<label for="sell-item-desc">Description</label>
 					<textarea name="description" id="sell-item-desc" class="form-control" rows="6" placeholder="Description"></textarea>
+					<small id="hint-description" style="color:red;padding-left:10px;display:none;">*Please write item description</small>
 				</div>
 				<button type="submit" class="btn btn-primary sell-button">Sell</button>
 
