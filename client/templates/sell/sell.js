@@ -88,5 +88,13 @@ Template.sell.events({
 			Router.go('showItem', {_id: result._id});
 		});
 
-	}
+	},
+	'change .myFileInput': function(event, template) {
+		FS.Utility.eachFile(event, function (file) {
+			Images.insert(file, function (err, fileObj) {
+				console.log(file);
+				// Inserted new doc with ID fileObj._id, and kicked off the data upload using HTTP	
+			})
+		});
+   	},
 });
