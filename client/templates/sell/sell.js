@@ -72,10 +72,24 @@ Template.sell.events({
 			correct_form = false;
 		}
 
+
+		// check if file is uploaded
+		if (! Session.get(Meteor.userId())) {
+			correct_form = false;
+		}
+
 		if (! correct_form) {
 			alert("Please fill all fields");
 			return false;
 		}
+
+
+		// write file url
+
+		file_info = Session.get(Meteor.userId());
+		sell_item = _.extend(sell_item, {
+			url: Images.findOne({_id: file_info._id}).url(download=true)
+		});
 
 
 		//	***************************************************
@@ -91,10 +105,10 @@ Template.sell.events({
 	},
 	'change .myFileInput': function(event, template) {
 		FS.Utility.eachFile(event, function (file) {
-			Images.insert(file, function (err, fileObj) {
-				console.log(file);
-				// Inserted new doc with ID fileObj._id, and kicked off the data upload using HTTP	
-			})
+			current_image = Images.insert(file, function (err, fileObj) {});
+			Tracker.nonreactive(function () {
+				Session.set(Meteor.userId(), current_image);
+			});
 		});
    	},
 });
