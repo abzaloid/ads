@@ -1,7 +1,7 @@
 <template name="showItem">
 	<div class="row">
 		<div class="col-xs-4 text-center center no-padding">
-			<img src="{{img}}" height="200px" class="img-responsive center" />
+			<img src="{{#if url}}{{url}}{{else}}{{img}}{{/if}}" height="200px" class="img-responsive center" />
 		</div>
 		<div class="col-xs-8 center ">
 			<h3>{{name}}</h3>
