@@ -1,9 +1,9 @@
 <template name="showItem">
 	<div class="row">
-		<div class="col-xs-4 text-center center no-padding">
+		<div class="col-sm-4 text-center center no-padding" style="padding-left:5px;">
 			<img src="{{#if url}}{{url}}{{else}}{{img}}{{/if}}" height="200px" class="img-responsive center" />
 		</div>
-		<div class="col-xs-8 center ">
+		<div class="col-sm-8 center ">
 			<h3>{{name}}</h3>
 			by <a href="{{pathFor 'user'}}">{{owner}}</a>
 			<br/>
@@ -51,7 +51,7 @@
 				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-xs">{{owner}}</p></a>
 			</div>
 			<div class="col-xs-10 center">
-				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-sm hidden-md hidden-lg">{{item.owner}}</p></a>
+				<a href="{{pathFor 'user'}}"><p class="comment-author hidden-sm hidden-md hidden-lg">{{owner}}</p></a>
 				<p class="comment-history">16 hours ago</p>
 				<p class="comment-body">
 				Nice! Very cheap yet very qualitative! Thank you!
