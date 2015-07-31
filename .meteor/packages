@@ -16,3 +16,4 @@ yogiben:admin
 cfs:gridfs
 cfs:filesystem
 cfs:standard-packages
+cfs:graphicsmagick
