@@ -17,3 +17,4 @@ cfs:gridfs
 cfs:filesystem
 cfs:standard-packages
 cfs:graphicsmagick
+matteodem:easy-search
