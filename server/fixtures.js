@@ -76,6 +76,9 @@ if (Categories.find().count() === 0) {
         name: 'Lost & Found'
     });
     Categories.insert({
+        name: 'I want to BUY'
+    });
+    Categories.insert({
     	name: 'Others'
     });
 }
