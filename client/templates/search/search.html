@@ -1,0 +1,21 @@
+<template name="search">
+	{{> esInput index="sell_items" placeholder="Search..."}}
+
+	<ul>
+		{{#esEach index="sell_items"}}
+			<li><p>{{name}}</p>
+			<small>{{description}}</small> </li>
+		{{/esEach}}
+	</ul>
+
+	{{> esLoadMoreButton index="sell_items"}}
+	
+	{{#ifEsHasNoResults}}
+		<div class="no-results">No results found! </div>
+	{{/ifEsHasNoResults}}
+
+	{{#ifEsIsSearching index="sell_items"}}
+		{{> spinner}}
+	{{/ifEsIsSearching}}
+
+</template>
