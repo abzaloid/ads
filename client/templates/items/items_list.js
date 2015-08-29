@@ -1,4 +1,4 @@
-Template.adsList.helpers({
+Template.itemsList.helpers({
   sell_items: function() {
     return SellItems.find();
   },
