@@ -11,10 +11,10 @@
               </button>
           </div>
           <div class="col-xs-12 logo hidden-xs hidden-sm">
-              <a href="{{pathFor 'itemsList'}}"><img width="100px" src="/images/amazon.png"/></a>
+              <a href="{{pathFor 'home'}}"><img width="100px" src="/images/amazon.png"/></a>
           </div>
           <div class="col-xs-10 logo hidden-md hidden-lg">
-              <a href="{{pathFor 'itemsList'}}"><img width="100px" src="/images/amazon.png"/></a>
+              <a href="{{pathFor 'home'}}"><img width="100px" src="/images/amazon.png"/></a>
           </div>
         </div>
       </div>
@@ -30,9 +30,9 @@
                   {{/each}}
                 </ul>
               </div>
-              <input type="text" id="search-input" class="form-control" aria-label="..." placeholder="Search"/>
+              <input type="text" id="search-input" class="form-control" aria-label="..." placeholder="Search" />
               <div class="input-group-btn">
-                <button type="button" class="btn btn-default" ><span class="glyphicon glyphicon-search "></span>&nbsp;</button>
+                <button type="button" class="btn btn-default" id="search-button"><span class="glyphicon glyphicon-search "></span>&nbsp;</button>
               </div>
             </div>
           </div>
