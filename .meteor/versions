@@ -23,7 +23,7 @@ cfs:file@0.1.17
 cfs:filesystem@0.1.2
 cfs:graphicsmagick@0.0.18
 cfs:gridfs@0.0.33
-cfs:http-methods@0.0.29
+cfs:http-methods@0.0.30
 cfs:http-publish@0.0.13
 cfs:power-queue@0.9.11
 cfs:reactive-list@0.0.9
@@ -44,7 +44,7 @@ geojson-utils@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
-ian:accounts-ui-bootstrap-3@1.2.77
+ian:accounts-ui-bootstrap-3@1.2.79
 id-map@1.0.3
 iron:controller@1.0.8
 iron:core@1.0.8

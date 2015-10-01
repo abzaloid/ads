@@ -9,3 +9,4 @@ Meteor.publish('sell_items', function() {
 Meteor.publish("images", function() {
 	return Images.find(); 
 });
+

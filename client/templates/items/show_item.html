@@ -5,7 +5,7 @@
 		</div>
 		<div class="col-sm-8 center ">
 			<h3>{{name}}</h3>
-			by <a href="{{pathFor 'user'}}">{{owner}}</a>
+			by <a href="{{pathFor 'user' _id=this.userId}}">{{owner}}</a>
 			<br/>
 			<br/>
 			<p><strong>Added: </strong>{{formatDateFromNow added_date}}</p>
