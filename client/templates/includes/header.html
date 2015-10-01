@@ -42,6 +42,9 @@
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li><a href="{{pathFor 'sell'}}">Sell</a></li>
+                {{#if currentUser}}
+                <li><a href="{{pathFor 'user' _id=user_id}}">Dashboard</a></li>
+                {{/if}}
                 <li><a href="#">Contact</a></li> 
                 <li><a href="#">Help</a></li> 
               </ul>

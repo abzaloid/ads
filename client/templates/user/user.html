@@ -1,25 +1,14 @@
-<!-- <template name="user">
+<template name="user">
 	<div class="user-offset">
-		<h2>{{profile.firstname}} {{profile.lastname}}</h2>
-		<div class="row">
-			<div class="col-lg-6 col-md-6">
-				<h4>About</h4>
-				<p class="lead">I am Robotics and Mechatronics 4th year student. For any questions, please go to http://openstats.kz </p>
-				<h4>Telephone</h4>
-				<p class="lead">+7 (777) 174-73-14</p>
-			</div>
-			<div class="col-lg-6 col-md-6">
-				<h4>Last items</h4>
-				{{#each sell_items}}
-					{{> Item}}
-				{{/each}}
-			</div>
-		</div>
 		<h4>All Items</h4>
 		<div class="row">
 			{{#each sell_items}}
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-primary pull-right">Edit</button>
+					<button type="button" class="btn btn-primary pull-right">Remove</button>
+				</div>
 				{{> Item}}
 			{{/each}}
 		</div>
 	</div>
-</template> -->
+</template>

@@ -1,6 +1,9 @@
 Template.header.helpers({
   categories: function() {
     return Categories.find();
+  },
+  user_id: function () {
+  	return Meteor.userId();
   }
 });
 
